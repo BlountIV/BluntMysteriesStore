@@ -2,7 +2,7 @@ require("dotenv").config()
 const express = require("express")
 const mongoose = require("mongoose")
 const app = express()
-const port = 3000
+const PORT = process.env.PORT || 3000;
 const methodOverride = require('method-override')
 const Mysteries = require("./models/store.js")
 
@@ -116,6 +116,6 @@ app.get("/mysteries/:id", (err, foundMysteries) => {
   })
 })
 
-app.listen(port, () => {
+app.listen(PORT, () => {
   console.log("listening")
 })
