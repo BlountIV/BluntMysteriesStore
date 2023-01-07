@@ -50,13 +50,13 @@ app.get("/mysteries/new", (req, res) => {
   res.render("New")
 })
 
-// Delete - Delete this one record
-app.delete('/mysteries/:id', (req, res) => {
-  console.log(req.params)
-  Mysteries.findByIdAndRemove(req.params.id, (err, data) => {
-    res.redirect('/mysteries') // redirect back to mysteries index
-  })
-})
+// Delete - Delete this one record. Couldn't figure out why this didn't work
+// app.delete('/mysteries/:id', (req, res) => {
+//   console.log(req.params)
+//   Mysteries.findByIdAndRemove(req.params.id, (err, data) => {
+//     res.redirect('/mysteries') // redirect back to mysteries index
+//   })
+// })
 
 // update - Modifying a record
 app.put('/mysteries/buy/:id', (req, res) => {

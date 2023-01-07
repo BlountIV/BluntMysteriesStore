@@ -1,0 +1,15 @@
+* {
+    background-color:  #aa5061; /* Dragon's Blood */
+    text-align: center;
+}
+a{
+  text-decoration: none;
+}
+a:hover , a:focus , a:active {
+    box-shadow: 10px 10px 10px #354957; /* Reflecting Pond */
+    transform: scale(1.05);
+  }
+  
+.copyright{
+    display: flex;
+  }

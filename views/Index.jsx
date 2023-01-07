@@ -6,7 +6,7 @@ class Index extends React.Component {
 
         return (
             <div>
-                {/* <link rel="stylesheet" type="text/css" href="../css/style.css" /> */}
+                <link rel="stylesheet" type="text/css" href="../index.css" />
                 <h1> Don't Go Alone Take These... Mystery Items </h1>
                 <ul>
                     {allMysteries.map((store, i) => {
@@ -18,7 +18,7 @@ class Index extends React.Component {
                     })}
                 </ul>
                 <nav>
-                    <a href='/mysteries/new'>Search for a New Mystery Item</a>
+                    <a href='/mysteries/new'>Search for a New Mystery Item</a> | <a href="/">Home</a>
                 </nav>
 
             </div>
